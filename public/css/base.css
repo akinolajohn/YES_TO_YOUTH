@@ -1,0 +1,106 @@
+/* --- NOTE ---
+        Main colors are:
+            #604980,
+            #3F3B9A
+*/
+
+/* HTML Elements */
+        /* *
+            --- NOTE ---
+                Set the initial animation & transition speeds of all elements.
+        */
+        * {
+            animation-duration: .5s;
+            transition-duration: .5s
+        }
+        *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+            /* --- NOTE ---
+                    Make all text except headers standard weighted.
+            */
+            font-weight: normal
+        }
+        /* <a> */
+        a {
+            text-decoration: none !important
+        }
+        /* <body> */
+        body {
+            font-family: "Calibri Light", "Helvetica Neue", Roboto, Calibri, Arial, sans-serif
+        }
+        /* <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+                --- NOTE ---
+                    Make all headers light weighted.
+        */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 { font-weight: 300 }
+        /* <main> */
+        main {
+            padding: 10px
+        }
+
+/* Components */
+    /* Header */
+    #header {
+        background: #604980;
+        background-attachment: scroll;
+        background-image: url(../img/jpg/header.jpg);
+        background-position: 100% 33%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        text-align: center
+    }
+    /* Navigation */
+    #navigation {
+        margin-top: 0 !important
+    }
+    body > * + #navigation .navbar {
+        border-radius: 0;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+        margin-top: -50px !important;
+        width: 90% !important
+    }
+    #navigation .navbar,
+    #navigation .navbar * {
+        background: #FFF;
+        border: 0;
+        border-bottom: 1px solid #3F3B9A;
+        color: #FFF;
+        font-size: 17.5px;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        width: 100%
+    }
+    #navigation a {
+        color: #3F3B9A !important;
+        padding-top: 12.5px !important
+    }
+    #navigation a:hover {
+        background: #3F3B9A;
+        color: #FFFFFF !important
+    }
+    /* Footer
+            --- NOTE ---
+                In small print.
+    */
+    #footer {
+        border: 1px solid;
+        color: #808080;
+        display: none;
+        font-size: 13px;
+        margin: 15px auto;
+        padding: 20px 50px;
+        text-align: center;
+        width: 80%
+    }
+        /* Copyright */
+        #footer .copyright {
+            font-size: smaller;
+            margin-top: 15px;
+            text-align: right
+        }

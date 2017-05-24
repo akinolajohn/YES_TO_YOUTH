@@ -1,0 +1,132 @@
+/* HTML Elements */
+    /* <body> */
+    body {
+        overflow-x: hidden
+    }
+
+/* Components */
+    /* Navigation List Item */
+    #navigation a#home {
+        background: #3F3B9A;
+        color: #FFFFFF !important
+    }
+
+/* Articles */
+.article {
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+    font-size: 16px;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 10px;
+    width: 90%
+}
+    /* Headings */
+    .article > h1 {
+        font-size: 50px
+    }
+    /* Paragraphs */
+    .article > p {
+        margin-left: 2.5em
+    }
+    /* Sections */
+    .article > section {
+        height: inherit
+    }
+
+    /* Post Article */
+        /* Section */
+        #postArticle .section {
+            margin: 20px auto;
+            padding: 10px;
+            width: 90%
+        }
+            /* Thumbnails */
+            #postArticle .section .thumbnail {
+                filter: brightness(.975);
+                height: 250px;
+                margin: 10px auto;
+                width: 300px
+            }
+            #postArticle .section .thumbnail:hover {
+                box-shadow: 0 0 2.5px 0 rgba(0, 0, 0, .25);
+                filter: brightness(1);
+                height: 260px;
+                overflow: hidden;
+                transform: translateY(-5px);
+                width: 310px
+            }
+                /* Images */
+                #postArticle .section .thumbnail img {
+                    height: 85%;
+                    margin: 0 auto;
+                    width: 100%
+                }
+                /* Caption */
+                #postArticle .section .thumbnail .caption {
+                    height: 15%;
+                    text-align: center
+                }
+                /* Description */
+                #postArticle .section .thumbnail .description {
+                    background: rgba(0, 0, 0, .675);
+                    color: transparent;
+                    cursor: default;
+                    display: inline-block;
+                    font-size: smaller;
+                    height: 0;
+                    margin: 0 auto;
+                    margin-top: -60px;
+                    opacity: 0;
+                    overflow-y: hidden;
+                    padding: 6.75px;
+                    pointer-events: none;
+                    position: fixed;
+                    text-overflow: ellipsis;
+                    text-shadow: 0 0 1px #808080;
+                    width: 97.25%
+                }
+                #postArticle .section .thumbnail:hover .description {
+                    color: #FFFFFF;
+                    height: 60px;
+                    position: absolute;
+                    opacity: 1;
+                }
+                #postArticle .section .thumbnail .description::after {
+                    color: #00ACFF;
+                    content: " Read more » ";
+                    cursor: pointer;
+                    display: inherit;
+                    height: 15px;
+                    margin-top: -5px;
+                    overflow: inherit;
+                    padding-right: 5%;
+                    position: inherit;
+                    text-align: right;
+                    width: inherit
+                }
+    /* Carousel Article */
+        /* Carousel */
+        #carouselArticle .carousel {
+            zoom: .7
+        }
+            /* Caption */
+            #carouselArticle .carousel-caption {
+                background: rgba(0, 0, 0, .5);
+                box-shadow: 0 160px 0 160px rgba(0, 0, 0, .5);
+                height: 75px;
+            }
+            /* Indicators */
+            #carouselArticle .carousel-indicators li {
+                background: rgba(0, 0, 0, .5);
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, .75);
+                height: 12.5px;
+                margin: 0 5px;
+                padding: 0;
+                zoom: .9
+            }
+            #carouselArticle .carousel-indicators li:first-child {
+                margin-left: 75px
+            }
+            #carouselArticle .carousel-indicators li.active {
+                background: #FFFFFF;
+            }
